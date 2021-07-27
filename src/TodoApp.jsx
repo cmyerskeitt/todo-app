@@ -1,10 +1,10 @@
 import React from 'react';
-import ToDoContainer from './components/TodoContainer';
+import TodoContainer from './components/TodoContainer';
 
 function TodoApp() {
   return (
     <div>
-      <ToDoContainer/>
+      <TodoContainer/>
     </div>
     
   );

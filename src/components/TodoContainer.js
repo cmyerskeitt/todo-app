@@ -1,11 +1,11 @@
 import React from "react"
 import TodoList from "./TodoList"
 
-class ToDoContainer extends React.Component {
+class TodoContainer extends React.Component {
     state= {
         todos: [
             {
-                id:1,
+                id: 1,
                 title:"Setup development environment",
                 complete: true 
             },
@@ -31,4 +31,4 @@ class ToDoContainer extends React.Component {
     }
 
 }
-export default ToDoContainer
+export default TodoContainer
