@@ -16,7 +16,15 @@ class InputTodo extends React.Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        console.log(this.state.title)
+        if(this.state.title.trim()){
+            this.props.addTodoProps(this.state.title)
+            this.setState({
+            title: ""
+            })
+        } else {
+            alert("Please draft a new Todo item!")
+        }
+        
     }
 
 
