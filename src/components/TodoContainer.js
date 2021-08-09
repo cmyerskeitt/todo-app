@@ -7,23 +7,7 @@ import "./TodoApp.css"
 
 class TodoContainer extends React.Component {
     state = {
-        todos: [
-            {
-                id: uuidv4(),
-                title:"Setup development environment",
-                complete: true 
-            },
-            {
-                id: uuidv4(),
-                title:"Develop website and add content",
-                complete: false
-            },
-            {
-                id: uuidv4(),
-                title:"Deploy to live sever",
-                complete: false 
-            }
-        ]
+        todos: []
     }
 
     handleChange = (id) => {

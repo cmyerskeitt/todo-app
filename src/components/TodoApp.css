@@ -7,9 +7,9 @@
 body{
     font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.4;
-    color: #444;
-    background: #fff;
-    height: 100vh;
+    color: darkgrey;
+    background: royalblue;
+    height: 00vh;
 }
 .container {
     display: flex;
@@ -44,12 +44,12 @@ body{
   }
   
   .input-text::placeholder {
-    color: #000;
+    color: darkgrey;
   }
   
   .input-submit {
     background: transparent;
-    color: #5b5b5b;
+    color: white;
     text-transform: capitalize;
     cursor: pointer;
     font-weight: 600;

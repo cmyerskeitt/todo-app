@@ -15,10 +15,9 @@ const Header = () => {
                 lineHeight: "1em",
                 color: "#ececec",
                 textTransform: "lowercase",
-                textAlign: "center",
-      }}
-      >
-          Todos</h1>
+                textAlign: "center", }}>
+          Todos
+          </h1>
         </header>
     )
 }
