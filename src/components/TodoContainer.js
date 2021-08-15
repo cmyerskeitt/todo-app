@@ -6,7 +6,19 @@ import { v4 as uuidv4} from "uuid"
 import "./TodoApp.css"
 
 const TodoContainer = () => {
-    const [todos, setTodos] = useState([])
+    const [todos, setTodos] = useState(getInitialTodos())
+
+    useEffect(() => {
+        const temp = JSON.stringify(todos)
+        localStorage.setItem("todos", temp)
+        }, [todos])
+    
+
+    function getInitialTodos() {
+        const temp = localStorage.getItem("todos")
+        const savedTodos = JSON.parse(temp)
+        return savedTodos || [] 
+    }
 
     const handleChange = id => {
         setTodos(prevState => 
@@ -50,11 +62,7 @@ const TodoContainer = () => {
         )
       }
 
-      useEffect(() => {
-        const temp = JSON.stringify(todos)
-        localStorage.setItem("todos", temp)
-        }, [todos])
-    
+   
       return (
         <div className="container">
           <div className="inner">
