@@ -50,7 +50,7 @@ class TodoItem extends React.Component {
                 </span><br>
                 </br>
                 <button onClick={() => this.props.deleteTodoProps(id)}>
-                    <FaTrash /> 
+                <FaTrash style={{ color: "orangered", fontSize: "16px" }} />
                 </button>
             </div>
             <input type="text" style={editMode} className={styles.textInput} value={title} onChange={e => {this.props.setUpdate(e.target.value, id)}} onKeyDown={this.handleUpdatedDone}/>
