@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
-import Header from "./Header"
+import Header from "../components/Header"
 import InputTodo from "./InputTodo"
-import TodosList from "./TodoList"
+import TodosList from "../components/TodoList"
 import { v4 as uuidv4} from "uuid"
 import "./TodoApp.css"
 
