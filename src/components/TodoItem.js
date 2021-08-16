@@ -1,5 +1,7 @@
 import React from 'react' 
 import styles from "./TodoItem.module.css"
+import { FaTrash} from "react-icons/fa"
+
 
 class TodoItem extends React.Component {
     state = {
@@ -48,7 +50,7 @@ class TodoItem extends React.Component {
                 </span><br>
                 </br>
                 <button onClick={() => this.props.deleteTodoProps(id)}>
-                    Delete
+                    <FaTrash /> 
                 </button>
             </div>
             <input type="text" style={editMode} className={styles.textInput} value={title} onChange={e => {this.props.setUpdate(e.target.value, id)}} onKeyDown={this.handleUpdatedDone}/>
