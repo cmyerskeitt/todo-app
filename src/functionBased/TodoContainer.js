@@ -26,7 +26,7 @@ const TodoContainer = () => {
 
     const handleChange = id => {
         setTodos(prevState => 
-            prevState.map(todo => {
+            prevState.map((todo) => {
                 if (todo.id === id){
                     return {
                         ...todo, 
