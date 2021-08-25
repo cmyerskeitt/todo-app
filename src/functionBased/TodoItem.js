@@ -31,7 +31,7 @@ const TodoItem = (props) => {
         textDecoration: "line-through",
     }
 
-        const { complete, id, title } = props.todo 
+        const { completed, id, title } = props.todo 
 
         let viewMode = {}
         let editMode = {}
@@ -44,8 +44,8 @@ const TodoItem = (props) => {
         return (
         <li className={styles.item}> 
             <div onDoubleClick={handleEditing} style={viewMode}>
-                <input type="checkbox" className={styles.checkbox} checked={complete} onChange={() =>props.handleChangeProps(id)}/>
-                <span style= {complete ? completedStyle : null}>
+                <input type="checkbox" className={styles.checkbox} checked={completed} onChange={() =>props.handleChangeProps(id)}/>
+                <span style= {completed ? completedStyle : null}>
                 {title}
                 </span><br>
                 </br>
