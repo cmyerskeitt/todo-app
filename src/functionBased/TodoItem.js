@@ -50,7 +50,7 @@ const TodoItem = (props) => {
                 </span><br>
                 </br>
                 <button onClick={() => props.deleteTodoProps(id)}>
-                <FaTrash style={{ color: "orangered", fontSize: "16px" }} />
+                <FaTrash style={{ color: "darkcyan", fontSize: "16px" }} />
                 </button>
             </div>
             <input type="text" style={editMode} className={styles.textInput} value={title} onChange={e => {props.setUpdate(e.target.value, id)}} onKeyDown={handleUpdatedDone}/>

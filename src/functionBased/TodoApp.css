@@ -8,7 +8,7 @@ body{
     font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.4;
     color: darkgrey;
-    background: royalblue;
+    background: lightblue;
     height: 00vh;
 }
 .container {
@@ -44,7 +44,7 @@ body{
   }
   
   .input-text::placeholder {
-    color: darkgrey;
+    color: darkcyan;
   }
   
   .input-submit {
@@ -121,14 +121,14 @@ body{
   }
   
   .about__list a {
-    color: #9f9f9f;
+    color: #fff;
     text-transform: capitalize;
     padding: 20px 0;
     font-weight: 600;
   }
   
   .about__list a:hover {
-    color: #000;
+    color: darkcyan;
   }
   
   .main__content {
