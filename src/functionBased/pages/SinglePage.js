@@ -15,7 +15,7 @@ const SinglePage = ()=> {
           slug: "about-author",
           title: "About the Author",
           description:
-            "This app was developed by Christine Myers Keitt , a web developer and educator. She is opened to freelance Gig. So go ahead and connect with Christine on Twitter @MKCodes.",
+            "This app was developed by Christine Myers Keitt , a web developer and educator. She is opened to freelance gigs. So go ahead and connect with Christine on Twitter @MKCodes.",
         },
     ]
 
